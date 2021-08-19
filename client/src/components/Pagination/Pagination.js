@@ -8,11 +8,11 @@ const Pagination = ({ perPage, productsCount, handleClickPagination }) => {
   return (
     <>
       <nav>
-        <ul className="pagination justify-content-center">
+        <ul className='pagination justify-content-center'>
           {
             pageNumbers.map(number => (
-              <li key={number} className="page-item">
-                <button onClick={()=> handleClickPagination(number)} className="page-link">{number}</button>
+              <li key={number} className='page-item'>
+                <button onClick={() => handleClickPagination(number)} className='page-link'>{number}</button>
               </li>
             ))
           }

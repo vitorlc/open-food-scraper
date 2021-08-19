@@ -16,7 +16,7 @@ const ProductSchema = new mongoose.Schema({
   status: {
     type: String,
     default: 'imported',
-    enum: ["draft", "imported"]
+    enum: ['draft', 'imported']
   },
   imported_t: {
     type: Date,
@@ -28,20 +28,20 @@ const ProductSchema = new mongoose.Schema({
     required: true
   },
   quantity: {
-    type: String,
+    type: String
   },
   categories: [{
     type: String,
     required: true
   }],
   packaging: [{
-    type: String,
+    type: String
   }],
   brands: [{
-    type: String,
+    type: String
   }],
   image_url: {
-    type: String,
+    type: String
   }
 })
 
